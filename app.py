@@ -62,7 +62,8 @@ def update_book(book_id):
 
     return jsonify(book), 200
 
-
+# Teammates work
+#bla bla bla
 @app.route("/books/<int:book_id>", methods=["DELETE"])
 def delete_book(book_id):
     book = find_book(book_id)
