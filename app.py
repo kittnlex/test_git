@@ -5,16 +5,16 @@ app = Flask(__name__)
 books = []
 next_id = 1
 
-
+# comments
 def find_book(book_id):
     return next((b for b in books if b["id"] == book_id), None)
 
-
+# practicing with comments
 @app.route("/books", methods=["GET"])
 def get_books():
     return jsonify(books), 200
 
-
+# test git
 @app.route("/books/<int:book_id>", methods=["GET"])
 def get_book(book_id):
     book = find_book(book_id)
